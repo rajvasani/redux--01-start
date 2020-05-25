@@ -7,6 +7,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.STORE_RESULT:
+      //Change data before saving to store 1
       return {
         ...state,
         results: state.results.concat({ id: new Date(), value: action.result }),
